@@ -1,0 +1,47 @@
+/*-----------------------------------------------------*\
+
+	*Filename:		base.scss
+	*Description: 	contains the baselines specifically
+					for the project
+	*Version:		1.0.0(2014-01-28)
+	*Website:		http://schonne.com
+	*Author:		Schonne Eldridge
+
+ ===TABLE OF CONTENTS:===================================
+
+	$_FONTS					dynamic fonts
+	$_PROJECT BASELINE		baselines for the project
+
+\*------------------------------------------------------*/
+
+@import "../base/sass";
+
+.company-profile {
+	position: absolute;
+	top: 135px;
+	left: 175px;
+	
+	#PerfMetrics {
+	  width: 400px;
+	}
+
+	.slider {
+	  width: 90%;
+	}
+
+	.slider > .dragger {
+	  background: #c09551;
+	  background: -webkit-linear-gradient(top, #c09551, #c09551);
+	  background: -moz-linear-gradient(top, #c09551, #c09551);
+	  background: linear-gradient(top, #c09551, #c09551);
+	}
+
+	.slider > .dragger:hover {
+	  background: -webkit-linear-gradient(top, #c09551, #c09551);
+	}
+
+	table.months {
+	  width: inherit;
+	  margin-left: 6px;
+	}
+}
