@@ -1,0 +1,71 @@
+/*-----------------------------------------------------*\
+
+	*Filename:		base.scss
+	*Description: 	contains the baselines specifically
+					for the project
+	*Version:		1.0.0(2014-01-28)
+	*Website:		http://schonne.com
+	*Author:		Schonne Eldridge
+
+ ===TABLE OF CONTENTS:===================================
+
+	$_FONTS					dynamic fonts
+	$_PROJECT BASELINE		baselines for the project
+
+\*------------------------------------------------------*/
+
+@import "../base/sass";
+
+.sidebar {
+	color: white;
+	background-color: $darkgrey;
+	height: calc(100% - 80px);
+	width: 125px;
+	position: fixed;
+	margin-top: 80px;
+	transition: all 1s;
+	opacity: 0;
+	height: 0;
+
+	a {
+		display: block;
+		height: 100%;
+		padding-bottom: 16px;
+		color: #9C9C9A;
+		transition: all 1s;
+		&:hover {
+			color: white;
+			background-color: #555555;
+		}
+	}
+	.menuitem {
+		height: auto;
+		border-bottom: 1px #2D2D2C solid;
+		border-top: 1px solid #606162;
+		text-align: center;
+		color: #9C9C9A;
+		cursor: pointer;
+		transition: all .5s ease;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 5px;
+
+		&:hover {
+			color: white;
+			background-color: #555555;
+		}
+
+		i {
+			font-size: 35px;
+			font-family: FontAwesome;
+			font-weight: normal;
+		}
+
+		p {
+			font-size: 13px;
+			line-height: 1;
+		}
+	}
+
+
+}

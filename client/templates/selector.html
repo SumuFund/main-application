@@ -1,0 +1,16 @@
+<template name="selector">
+	<section class="selector">
+		<div class="circular schoollogo"></div>
+		<div class="schoolname"></div>
+		<ul class="clearfix">
+			<li class="dropdown">
+			<a href="#" data-toggle="dropdown">Change Partnership<i class="icon-arrow"></i></a>
+				<ul class="dropdown-menu">
+				{{#each partnerships}}
+				  <li><a href="#" data-id="{{_id}}">{{partnerName}}</a></li>
+				{{/each}}
+				</ul>
+			</li>
+		</ul>
+	</section>
+</template>

@@ -1,0 +1,37 @@
+/*-----------------------------------------------------*\
+
+	*Filename:		base.scss
+	*Description: 	contains the baselines specifically
+					for the project
+	*Version:		1.0.0(2014-01-28)
+	*Website:		http://schonne.com
+	*Author:		Schonne Eldridge
+
+ ===TABLE OF CONTENTS:===================================
+
+	$_FONTS					dynamic fonts
+	$_PROJECT BASELINE		baselines for the project
+
+\*------------------------------------------------------*/
+
+@import "../base/sass";
+
+.companies {
+	display: none;
+	position: absolute;
+	top: 135px;
+	left: 175px;
+
+	.photo {
+		border: 10px solid #FFF;
+		width: 200px;
+		height: 200px;
+		display: block;
+		background-color: red;
+		box-shadow: -10px 10px 41px 0 rgba(9, 26, 44, 0.2);
+
+		company-logo {
+			
+		}
+	}
+}

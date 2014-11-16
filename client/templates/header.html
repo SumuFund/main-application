@@ -1,0 +1,19 @@
+<template name="header">
+<ul class="settings">
+	<li><a href="/edituser/{{_id}}">Account Settings</a></li>
+	<li class="logout">Log Out</li>
+</ul>
+	<header>
+		<div class="grid user">
+			<div class="unit two-of-three">		
+				<div class="username">{{firstName}} {{lastName}}</div>
+				<div class="team">{{role}}</div>	
+			</div>
+			<div class="unit one-of-three">
+			<div class="circular" style="background-image: url({{photo}})"></div>
+			</div>
+		</div>
+		<div class="logo"><a href="/"></a></div>
+		<span class="pagetitle">Overview</span>
+	</header>
+</template>

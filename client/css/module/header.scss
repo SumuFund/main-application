@@ -1,0 +1,247 @@
+/*-----------------------------------------------------*\
+
+	*Filename:		base.scss
+	*Description: 	contains the baselines specifically
+					for the project
+	*Version:		1.0.0(2014-01-28)
+	*Website:		http://schonne.com
+	*Author:		Schonne Eldridge
+
+ ===TABLE OF CONTENTS:===================================
+
+	$_FONTS					dynamic fonts
+	$_PROJECT BASELINE		baselines for the project
+
+\*------------------------------------------------------*/
+
+@import "../base/sass";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+header {
+	color: white;
+	background-color: #fff;
+	height: 80px;
+	width: 0;
+	padding-right: 2%;
+	position: fixed;
+	z-index: 1;
+	opacity: 0;
+	transition: all 1s;
+	box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+	.logo {
+		background-color: $blue;
+		height: 80px;
+		width: 125px;
+		background-image: url('logo.png');
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:35%;
+		display: inline-block;
+		transition: all 1s;
+		opacity: 0;
+
+		&:hover {
+			background-color: $gold;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	span {
+		font-family: 'Frutiger';
+		color: $blue;
+		height: 80px;
+		display: inline-block;
+		position: absolute;
+		line-height: 3.2;
+		font-size: 25px;
+		padding-left: 25px;
+		transition: all 1s;
+		opacity: 0;
+	}
+
+	.user {
+		display: inline-block;
+		right: 0;
+		margin-top: 12px;
+		position: absolute;
+		width: auto;
+		color: $blue;
+		margin-right: 20px;
+		cursor: pointer;
+		transition: all 2s;
+		opacity: 0;
+
+		&:hover{
+			color: $gold;
+		}
+
+		.one-of-three {
+			width: 60px
+		}
+
+		.two-of-three {
+			text-align: right;
+			line-height: 1;
+			padding-right: 5px;
+			padding-top:10px;
+			width: auto;
+		}
+
+		img {
+			width: 60px;
+		}
+
+		.username {
+			font-family: 'Frutiger';
+			font-size: 24px;
+			line-height: 1.1;
+		}
+
+		.team {
+			color: #9C9C9A;
+		}
+
+		.icons {
+			position: absolute;
+			top: 33px;
+			right: 62px;
+			width: 125px;
+			color: grey;
+			font-size: 20px;
+
+
+
+			i {
+				margin-left: 17px;
+				cursor: pointer;
+				transition: color 0.5s ease;
+				&:hover{
+					color: $blue;
+				}
+
+			}
+		}
+
+	}
+	.circular {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		background-size: cover;
+		border: solid $blue 3px;
+		display: inline-block;
+		transition:all .4s;
+
+		&:hover {
+			border: solid $gold 3px;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+
+			&:hover {
+				background-color: rgba(80,80,80, .2) ;
+			}
+		
+
+		}
+	}
+
+	
+}
+
+ul.settings li {
+  cursor:pointer;
+  padding:18px 15px;
+  position:relative;
+  transition:all .4s;
+  -webkit-transition:all .4s;
+  -moz-transition:all .4s;
+  
+  &:hover {
+    background-color: $gold;
+    color:#fff;
+    transition:all .4s;
+    -webkit-transition:all .4s;
+    -moz-transition:all .4s;
+  }
+
+  a {
+  	color: white;
+  	display: block;
+  	height: 100%;
+  	width: 100%;
+  }
+}
+
+ul.settings {
+	opacity:0;
+	width:260px;
+	padding:0;
+	list-style:none;
+	position:relative;
+	position:absolute;
+	font-weight:bold;
+	background-color: $blue;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	color:#fff;
+	text-transform:uppercase;
+	box-shadow:0 5px 14px rgba(0, 0, 0, 0.12);
+	-webkit-box-shadow:0 5px 14px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow:0 5px 14px rgba(0, 0, 0, 0.12);
+	right: 10px;
+	top: 60px;
+	z-index: 0;
+
+  & li:first-child {
+    border-radius:8px 8px 0 0;
+    -webkit-border-radius:8px 8px 0 0;
+    -moz-border-radius:8px 8px 0 0;
+  }
+  
+  & li:last-child {
+    border-radius:0 0 8px 8px;
+    -webkit-border-radius:0 0 8px 8px;
+    -moz-border-radius:0 0 8px 8px;
+  }
+  
+  &:before {
+    content:'';
+    position: absolute;
+    top: -16px;
+    right: 25px;
+    border-style: solid;
+    border-width: 0 14px 16px 14px;
+    border-color: rgba(0, 0, 0, 0) rgba(64, 154, 213, 0) $blue rgba(0, 0, 0, 0);
+  }
+  
+  & li:before {
+    font-family:'entypo';
+    font-weight:100;
+    font-size:22px;
+    position:absolute;
+    top:16px;
+    right:36px;
+  }
+  
+  & li:first-child:before {content:"\2699";}
+  & li:nth-child(2):before {content:"\e756";}
+  & li:nth-child(3):before {content:"\e005";}
+  & li:nth-child(4):before {content:"\1f53e";}
+  & li:nth-child(5):before {content:"\2699";}
+  & li:last-child:before {content:"\e741";}
+}
